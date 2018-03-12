@@ -1,0 +1,50 @@
+{
+  "name": "dojos",
+  "version": "1.0.0",
+  "description": "Simple exercises",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luzeduardo/dojos.git"
+  },
+  "keywords": [
+    "exercises",
+    "javascript"
+  ],
+  "author": "Eduardo Luz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luzeduardo/dojos/issues"
+  },
+  "homepage": "https://github.com/luzeduardo/dojos#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "jest": "^22.4.2"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "collectCoverage": false,
+    "coverageDirectory": "./coverage/",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "modulePathIgnorePatterns": [
+      "coverage"
+    ]
+  }
+}
